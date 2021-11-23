@@ -1,5 +1,9 @@
 # Send-Email
 Simple mail sending by PHPMailer and Create your local system.
+Send mail zero of cost and also send Attachment like Photo, pdf and multiple files.
+You should be create a login and verify two steps authentication like OTP, verifications 🔗 link.
+PHPMailer make your dreams project eassy and simple also free of cost.
+
 ## How to setup phpmailer
 - First one go to your XAMMP, WAMP, LAMP and MAMP htdocs folder.
 - Create your project folder.
