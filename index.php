@@ -45,7 +45,7 @@
 <form action="http://localhost:8000/sendmail.php"  method="POST" enctype="multipart/form-data">
 <div class="form-group">
     <label>From</label>
-    <input type="text" class="form-control" value="rr0211620@gmail.com" readonly aria-describedby="emailHelp">
+    <input type="text" class="form-control" value="your@gmail.com" readonly aria-describedby="emailHelp">
   </div>
   <div class="form-group">
     <label>To</label>
