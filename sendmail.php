@@ -4,26 +4,26 @@ use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
-require('PHPMailer/PHPMailer.php');
-require('PHPMailer/SMTP.php');
-require('PHPMailer/Exception.php');
+require('./PHPMailer.php');
+require('./SMTP.php');
+require('./Exception.php');
 
 if(isset($_POST['submit'])){
 
 $mail = new PHPMailer(true);
 
 try {
-$mail->SMTPDebug = 0;
+$mail->SMTPDebug = 3;
 $mail->isSMTP();
 $mail->Host = 'ssl://smtp.gmail.com';
 $mail->Port = 465;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mail->SMTPAuth = true;
 
-$mail->Username = 'rr0211620@gmail.com';
-$mail->Password = 'Rahim@Sahu*1999';
+$mail->Username = 'your@gmail.com';
+$mail->Password = 'yourpassword';
 
-$mail->setFrom('rr0211620@gmail.com', 'Rahim Sahu');
+$mail->setFrom('your@gmail.com', 'your name');
 $mail->addAddress($_POST['email']);
 
 $mail->isHTML(true);
