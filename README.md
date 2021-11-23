@@ -16,13 +16,13 @@ phpmailer zip folder.
 - Write your logic.
 - Code running good after MailDebug value your change. Like 0.
 ## Gmail SMTPS
-- $mail->Secure = 'ssl';
-- $mail->Host = 'smtp.gmail.com';
+- $mail->SMTPSecure = 'ssl';
+- $mail->Host = 'ssl://smtp.gmail.com';
 - $mail-Port = 465;
 ## Gmail STARTSMTP
-- $mail->Host = 'tsl://smtp.gmail.com';
-- $mail->Port = 678;
-- $mail->Secure = 'tsl';
+- $mail->Host = 'tls://smtp.gmail.com';
+- $mail->Port = 587;
+- $mail->SMTPSecure = 'tls';
 # Mail sending failed.
 ## Problem Solve
 - Can you used your gmail account in your project so you change your gmail accent setting.
@@ -31,4 +31,5 @@ phpmailer zip folder.
 - Last one is less secure access on (Enable).
 
 * You make a responsive UI so you used Bootstrap css framework.
+<code>Happy Coding.</code>
 
